@@ -1,1 +1,1 @@
-Zastosowanie drzew decyzyjnych w analizie popytu na system rowerów miejskich<img width="470" height="144" alt="image" src="https://github.com/user-attachments/assets/ed872b69-242a-4608-8727-616ba4052de9" />
+Zastosowanie drzew decyzyjnych w analizie popytu na system rowerów miejskich
