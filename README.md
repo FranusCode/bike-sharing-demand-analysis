@@ -1,6 +1,6 @@
 # Zastosowanie drzew decyzyjnych w analizie popytu na system rowerów miejskich
 
-Narzędzia: R
+**Narzędzia:** R
 
 ## Wstęp
 Celem niniejszego projektu jest analiza czynników wpływających na liczbę wypożyczeń rowerów miejskich oraz budowa modelu predykcyjnego pozwalającego prognozować popyt.
