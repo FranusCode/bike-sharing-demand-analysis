@@ -43,7 +43,7 @@ Celem modelu jest przewidzenie zmiennej binarnej Ruch (kategorie: duży/mały).
 
 ### Struktura drzewa klasyfikacyjnego
 Po przycięciu drzewa uzyskano model oparty na 5 kluczowych segmentach.
-![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
 *Rys. 2. Finalne drzewo klasyfikacyjne.*
 
 ### Wizualizacja
