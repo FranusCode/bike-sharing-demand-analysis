@@ -46,6 +46,60 @@ Po przycięciu drzewa uzyskano model oparty na 5 kluczowych segmentach.
 ![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
 *Rys. 2. Finalne drzewo klasyfikacyjne.*
 
+## Wizualizacja
+Model pozwolił na wyrysowanie mapy popytu w zależności od temperatury i wilgotności.
+![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+*Rys. 3. Wizualizacja klasyfikacji. Obszar zielony (D) oznacza prognozowany duży ruch, a obszar czerwony (M) to mały ruch.*
+
+## Wnioski
+Najważniejszym czynnikiem okazała się temperatura. Poniżej progu 12,32°C popyt jest systematycznie klasyfikowany jako mały, niezależnie od innych czynników.
+W dni ciepłe powyżej progu 12,32°C, ale wilgotne (>69,48%), o popycie decyduje wiatr. Słaby wiatr (< 12.8 km/h) sprzyja rowerzystom, więc ruch jest duży, natomiast silny wiatr zniechęca użytkowników i ruch jest mały.
+
+# Model Regresyjny
+Celem modelu jest prognoza dokładnej liczby wypożyczeń.
+
+## Struktura drzewa regresyjnego
+Model regresyjny również został ograniczony do 5 liści, co pozwoliło wyodrębnić główne czynniki wpływowe.
+![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+Rys. 4. Drzewo regresyjne. Liście mówią o średniej przewidywanej liczbie wypożyczonych rowerów.
+
+## Wizualizacja
+Poniższy wykres przedstawia podział danych na strefy w zależności od temperatury i prędkości wiatru. Czerwone liczby to predykcje modelu.
+<img width="470" height="99" alt="image" src="https://github.com/user-attachments/assets/6c2e5077-178f-4f55-813d-bb5b1dfad25b" />
+Rys. 5. Mapa regresji. Widoczna zmiana wpływu wiatru po przekroczeniu progu 12°C.
+
+## Wnioski
+Wykres pokazuje, że użytkownicy zupełnie inaczej reagują na wiatr w zależności od tego, czy jest zimno, czy ciepło. Granicą jest tutaj około 12°C.
+Gdy jest zimno (poniżej 12°C) to decyduje tylko temperatura. Na wykresie widać pionowe linie, oznacza to, że ludzie rezygnują z roweru głównie przez chłód. Siła wiatru nie ma tu większego znaczenia, bo popyt i tak jest niski.
+Gdy jest ciepło (powyżej 12°C), to w takim wypadku wiatr staje się decydujący (poziome linie podziału). Przy słabym wietrze notujemy rekordowe wyniki (średnio 6510 wypożyczeń). Gdy wiatr nasila się (powyżej 12 km/h), liczba wypożyczeń spada drastycznie do około 4600, nawet jeśli temperatura jest wysoka.
+
+## Ocena Dokładności
+Model osiągnął błąd średniokwadratowy RMSE równy ok. 1350 rowerów. Symulację przeprowadzono na podstawie finalnego, przyciętego drzewa dla idealnych warunków (lato, 25°C, słonecznie, wiatr 15 km/h, wilgotność na poziomie 50%).
+<img width="395" height="22" alt="image" src="https://github.com/user-attachments/assets/6efb0cb7-d30b-41cf-ab67-cdac46935d66" />
+Rys. 6. Wynik symulacji w konsoli R.
+
+## Podsumowanie
+Z modelu wynika, że klasyfikacja jest dobra do szybkiego ostrzegania, np. dla właściciela, który może decydować o liczbie pracujących danego dnia mechaników.
+Regresja pozwoliła natomiast wykryć, że podczas ciepłych dni decydującą rolę odgrywa wiatr. Analiza wykazała, że silne podmuchy potrafią skutecznie zniechęcić użytkowników i obniżyć popyt, nawet przy wysokiej temperaturze.
+Plusem modelu jest przejrzystość. Model jest prosty do interpretacji (np. jeśli temperatura jest mniejsza niż pewna wartość, to ruch spada). Minusem jest to, że model jest schodkowy. Wartości 20 stopni i 35 stopni mogą być traktowane jako ta sama kategoria "Ciepło", podczas gdy w rzeczywistości przy tak wysokiej temperaturze ruch mógłby spaść przez upał.
+Analiza przy użyciu drzew decyzyjnych wskazała, że temperatura jest głównym czynnikiem decydującym o liczbie wypożyczeń. Jednak w ciepłe dni wysoka wilgotność i silny wiatr stają się kluczowymi barierami, które mogą skutecznie obniżyć popyt. Model stanowi praktyczne narzędzie, które może wspomagać decyzje biznesowe wypożyczalni.
+
+**Źródło danych:** UCI Machine Learning Repository (Bike Sharing Dataset) [https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
