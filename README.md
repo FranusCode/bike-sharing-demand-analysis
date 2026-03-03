@@ -60,7 +60,7 @@ Celem modelu jest prognoza dokładnej liczby wypożyczeń.
 
 ### Struktura drzewa regresyjnego
 Model regresyjny również został ograniczony do 5 liści, co pozwoliło wyodrębnić główne czynniki wpływowe.
-![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_regresyjne_przycięte.png)
 Rys. 4. Drzewo regresyjne. Liście mówią o średniej przewidywanej liczbie wypożyczonych rowerów.
 
 ### Wizualizacja
