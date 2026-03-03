@@ -61,12 +61,12 @@ Celem modelu jest prognoza dokładnej liczby wypożyczeń.
 ### Struktura drzewa regresyjnego
 Model regresyjny również został ograniczony do 5 liści, co pozwoliło wyodrębnić główne czynniki wpływowe.
 ![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_regresyjne_przycięte.png)
-Rys. 4. Drzewo regresyjne. Liście mówią o średniej przewidywanej liczbie wypożyczonych rowerów.
+*Rys. 4. Drzewo regresyjne. Liście mówią o średniej przewidywanej liczbie wypożyczonych rowerów.*
 
 ### Wizualizacja 
 Poniższy wykres przedstawia podział danych na strefy w zależności od temperatury i prędkości wiatru. Czerwone liczby to predykcje modelu.
 ![Drzewo Klasyfikacyjne (przycięte)](images/obszary_popytu_regresja.png)
-Rys. 5. Mapa regresji. Widoczna zmiana wpływu wiatru po przekroczeniu progu 12°C.
+*Rys. 5. Mapa regresji. Widoczna zmiana wpływu wiatru po przekroczeniu progu 12°C.*
 
 ### Wnioski
 Wykres pokazuje, że użytkownicy zupełnie inaczej reagują na wiatr w zależności od tego, czy jest zimno, czy ciepło. Granicą jest tutaj około 12°C.
@@ -78,7 +78,7 @@ Model osiągnął błąd średniokwadratowy RMSE równy ok. 1350 rowerów. Symul
 
 <img width="395" height="22" alt="image" src="https://github.com/user-attachments/assets/6efb0cb7-d30b-41cf-ab67-cdac46935d66" />
 
-Rys. 6. Wynik symulacji w konsoli R.
+*Rys. 6. Wynik symulacji w konsoli R.*
 
 ## Podsumowanie
 Z modelu wynika, że klasyfikacja jest dobra do szybkiego ostrzegania, np. dla właściciela, który może decydować o liczbie pracujących danego dnia mechaników.
