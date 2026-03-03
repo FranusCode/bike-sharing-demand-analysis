@@ -75,7 +75,9 @@ Gdy jest ciepło (powyżej 12°C), to w takim wypadku wiatr staje się decydują
 
 ## Ocena Dokładności
 Model osiągnął błąd średniokwadratowy RMSE równy ok. 1350 rowerów. Symulację przeprowadzono na podstawie finalnego, przyciętego drzewa dla idealnych warunków (lato, 25°C, słonecznie, wiatr 15 km/h, wilgotność na poziomie 50%).
+
 <img width="395" height="22" alt="image" src="https://github.com/user-attachments/assets/6efb0cb7-d30b-41cf-ab67-cdac46935d66" />
+
 Rys. 6. Wynik symulacji w konsoli R.
 
 ## Podsumowanie
