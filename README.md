@@ -35,6 +35,22 @@ Algorytm ma tendencję do budowania zbyt skomplikowanych struktur. Drzewo pełne
 ![Drzewo Klasyfikacyjne (pełne)](images/drzewo_klasyfikacyjne_pełne.png)
 *Rys. 1. Drzewo decyzyjne przed optymalizacją. Duża ilość gałęzi wskazuje na zjawisko przeuczenia.*
 
+### Przycinanie
+Aby zbudować użyteczny model, zastosowano metodę przycinania. Zredukowano złożoność drzewa do 5 liści. Wyodrębniło to tylko najważniejsze reguły decyzyjne.
+
+## Model Klasyfikacyjny
+Celem modelu jest przewidzenie zmiennej binarnej Ruch (kategorie: duży/mały). 
+
+### Struktura drzewa klasyfikacyjnego
+Po przycięciu drzewa uzyskano model oparty na 5 kluczowych segmentach.
+![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+*Rys. 2. Finalne drzewo klasyfikacyjne.*
+
+
+
+
+
+
 
 
 
