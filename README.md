@@ -48,7 +48,7 @@ Po przycięciu drzewa uzyskano model oparty na 5 kluczowych segmentach.
 
 ### Wizualizacja
 Model pozwolił na wyrysowanie mapy popytu w zależności od temperatury i wilgotności.
-![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
+![Drzewo Klasyfikacyjne (przycięte)](images/wizualizacja_temperatura_wilgotność.png)
 *Rys. 3. Wizualizacja klasyfikacji. Obszar zielony (D) oznacza prognozowany duży ruch, a obszar czerwony (M) to mały ruch.*
 
 ### Wnioski
