@@ -54,11 +54,13 @@ Celem modelu jest przewidzenie zmiennej binarnej Ruch (kategorie: duży/mały).
 
 ### Struktura drzewa klasyfikacyjnego
 Po przycięciu drzewa uzyskano model oparty na 5 kluczowych segmentach.
+
 ![Drzewo Klasyfikacyjne (przycięte)](images/drzewo_klasyfikacyjne_przycięte.png)
 *Rys. 2. Finalne drzewo klasyfikacyjne.*
 
 ### Wizualizacja
 Model pozwolił na wyrysowanie mapy popytu w zależności od temperatury i wilgotności.
+
 ![Drzewo Klasyfikacyjne (przycięte)](images/wizualizacja_temperatura_wilgotność.png)
 *Rys. 3. Wizualizacja klasyfikacji. Obszar zielony (D) oznacza prognozowany duży ruch, a obszar czerwony (M) to mały ruch.*
 
@@ -78,6 +80,7 @@ Model regresyjny również został ograniczony do 5 liści, co pozwoliło wyodr�
 
 ### Wizualizacja 
 Poniższy wykres przedstawia podział danych na strefy w zależności od temperatury i prędkości wiatru. Czerwone liczby to predykcje modelu.
+
 ![Drzewo Klasyfikacyjne (przycięte)](images/obszary_popytu_regresja.png)
 *Rys. 5. Mapa regresji. Widoczna zmiana wpływu wiatru po przekroczeniu progu 12°C.*
 
@@ -105,29 +108,6 @@ Plusem modelu jest przejrzystość. Model jest prosty do interpretacji (np. jeś
 Analiza przy użyciu drzew decyzyjnych wskazała, że temperatura jest głównym czynnikiem decydującym o liczbie wypożyczeń. Jednak w ciepłe dni wysoka wilgotność i silny wiatr stają się kluczowymi barierami, które mogą skutecznie obniżyć popyt. Model stanowi praktyczne narzędzie, które może wspomagać decyzje biznesowe wypożyczalni.
 
 **Źródło danych:** UCI Machine Learning Repository (Bike Sharing Dataset) [https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
