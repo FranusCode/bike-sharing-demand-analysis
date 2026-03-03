@@ -33,6 +33,8 @@ Metoda drzew decyzyjnych polega na rekurencyjnym podziale zbioru danych na mniej
 Algorytm ma tendencję do budowania zbyt skomplikowanych struktur. Drzewo pełne chce dopasować się do każdego pojedynczego przypadku w danych treningowych, co prowadzi do utraty zdolności generalizacji.
 
 ![Drzewo Klasyfikacyjne (pełne)](images/drzewo_klasyfikacyjne_pełne.png)
+*Rys. 1. Drzewo decyzyjne przed optymalizacją. Duża ilość gałęzi wskazuje na zjawisko przeuczenia.*
+
 
 
 
